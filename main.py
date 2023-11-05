@@ -1,9 +1,10 @@
 from Classes.player import Player
 from Classes.item import Item
 from Classes.room import Room
-from Classes.location import Location
+from Classes.location import table, window, cupboard, door, locations_dict
 from Classes.interface import MainMenu
 from text import intro
+import functions as f
 
 while True:
     print(intro)
@@ -16,13 +17,29 @@ while True:
     main_menu = MainMenu()
 
     main_room.__str__(player_name)
-    main_menu.print_options()
 
-    # for item in main_room.locations:
-    #     item = Location(item, [])
-    #     #print(item)
-    #     #print(type(item))
-    #     print(item.name)
+    while True:
+        choice = main_menu.print_options()
+        match choice:
+            case "/sprawdź":
+                f.inspect(main_room.current_position, main_room, locations_dict)
+            case "/lewo":
+                main_room.current_position = f.move_left(main_room.current_position)
+                print(f"Stoisz teraz przed: {main_room.locations[main_room.current_position]}")
+            case "/prawo":
+                main_room.current_position = f.move_right(main_room.current_position)
+                print(f"Stoisz teraz przed: {main_room.locations[main_room.current_position]}")
+            case "/weź":
+                f.take_item()
+            case "/użyj":
+                f.use_item()
+            case "/wyrzuć":
+                f.throw_item()
+            case "/zakończ":
+                exit()
+
+
+
 
 
 

@@ -1,3 +1,3 @@
-#text.py
+# text.py
 
 intro = "..."
