@@ -1,5 +1,6 @@
 # functions.py
 from Classes.room import Room
+from Classes.location import get_location_name
 
 
 def inspect(current_position, room, location_dict):
@@ -24,8 +25,16 @@ def move_right(current_position):
     return current_position
 
 
-def take_item():
-    print("You took the item")
+def take_item(player_position, locations_dict):
+    item_name = input("Który przedmiot chcesz wziąć?\n")
+    location = get_location_name(player_position)
+    list_of_items = locations_dict[location].items
+
+    for item in list_of_items:
+        if item_name == item.name:
+            item.use_item()
+        else:
+            print("Nie ma takiego przedmiotu")
 
 
 def use_item():

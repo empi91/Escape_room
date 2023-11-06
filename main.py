@@ -7,7 +7,6 @@ from text import intro
 import functions as f
 
 while True:
-    print(intro)
     #player_name = input("Enter name of your character: ")
     player_name = "Filip"
     backpack = []
@@ -30,7 +29,7 @@ while True:
                 main_room.current_position = f.move_right(main_room.current_position)
                 print(f"Stoisz teraz przed: {main_room.locations[main_room.current_position]}")
             case "/weź":
-                f.take_item()
+                f.take_item(main_room.current_position, locations_dict)
             case "/użyj":
                 f.use_item()
             case "/wyrzuć":

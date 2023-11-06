@@ -1,18 +1,17 @@
 # room.py
+import text
+
+
 class Room:
-    current_position = 0
-    locations = ["stół", "okno", "drzwi", "szafka"]
+    current_position = 3
+    locations = ["stół", "szafka", "okno", "drzwi", ]
 
     def __init__(self, name):
         self.name = name
 
     def __str__(self, player_name):
-        return f"Witaj {player_name}, dobrze, że się obudziłeś! \n\
-Znajdujesz się pośrodku dużego, zamkniętego pokoju. \n\
-Pod sufitem pali się lampa i widzisz, że w pokoju znajduje się: \n\
-{self.locations[0]}, {self.locations[1]}, {self.locations[2]} oraz {self.locations[3]} \n\
-W tej chwili stoisz przy stole."
-
+        formatted_text = text.intro.format(player_name = player_name, location0 = self.locations[0], location1 = self.locations[1], location2 = self.locations[2], location3 = self.locations[3])
+        print(formatted_text)
 
     def move_left(self):
         return self.current_position
