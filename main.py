@@ -29,7 +29,7 @@ while True:
             case "/weź":
                 f.take_item(main_room.current_position, locations_dict, backpack)
             case "/użyj":
-                f.use_item(main_room.current_position, backpack)
+                f.use_item(main_room.current_position, locations_dict, backpack)
             case "/odłóż":
                 f.throw_item(main_room.current_position, locations_dict, backpack)
             case "/plecak":

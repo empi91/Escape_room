@@ -38,8 +38,19 @@ def take_item(player_position, locations_dict, player_backapck):
     print("Nie ma takiego przedmiotu")
 
 
-def use_item(player_position, player_backpack):
-    print("You used the item")
+def use_item(player_position, locations_dict, player_backpack):
+    item_name = input("Który przedmiot chcesz użyć?\n")
+    location = get_location_name(player_position)
+
+    for item in player_backpack:
+        if item_name == item.name:
+            print(location)
+            print(locations_dict[location])
+            item.use_item(locations_dict[location], item_name, player_backpack)
+            return
+
+    print("Nie masz takiego przedmiotu w plecaku")
+
     # if item OK and location OK then action1()
 
 

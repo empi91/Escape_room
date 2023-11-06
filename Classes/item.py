@@ -7,8 +7,14 @@ class Item:
     def __str__(self):
         return f"{self.name}"
 
-    def use_item(self):
-        print(f"{self.name} used")
+    def use_item(self, location, used_item, backpack):
+        #if check_use(location, used_item):
+        if False:
+            for item in backpack:
+                if used_item == item.name:
+                    backpack.remove(item)
+        else:
+            print(f"Nie możesz użyć {used_item} w {location}")
 
     def take_item(self, list_of_items, taken_item, backpack):
         for item in list_of_items:
