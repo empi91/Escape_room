@@ -29,7 +29,7 @@ while True:
                 main_room.current_position = f.move_right(main_room.current_position)
                 print(f"Stoisz teraz przed: {main_room.locations[main_room.current_position]}")
             case "/weź":
-                f.take_item(main_room.current_position, locations_dict)
+                f.take_item(main_room.current_position, locations_dict, backpack)
             case "/użyj":
                 f.use_item()
             case "/wyrzuć":

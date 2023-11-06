@@ -25,16 +25,19 @@ def move_right(current_position):
     return current_position
 
 
-def take_item(player_position, locations_dict):
+def take_item(player_position, locations_dict, player_backapck):
     item_name = input("Który przedmiot chcesz wziąć?\n")
     location = get_location_name(player_position)
-    list_of_items = locations_dict[location].items
 
-    for item in list_of_items:
-        if item_name == item.name:
-            item.use_item()
-        else:
-            print("Nie ma takiego przedmiotu")
+    if location in locations_dict:
+        list_of_items = locations_dict[location].items
+
+        for item in list_of_items:
+            if item_name == item.name:
+                item.take_item(locations_dict[location].items, item_name, player_backapck)
+                return
+
+    print("Nie ma takiego przedmiotu")
 
 
 def use_item():

@@ -10,8 +10,11 @@ class Item:
     def use_item(self):
         print(f"{self.name} used")
 
-    def take_item(self):
-        print(f"{self.name} taken")
+    def take_item(self, list_of_items, taken_item, backpack):
+        for item in list_of_items:
+            if taken_item == item.name:
+                list_of_items.remove(item)
+                backpack.append(item)
 
     def throw_item(self):
         print(f"{self.name} thrown")
