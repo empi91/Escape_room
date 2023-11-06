@@ -1,13 +1,11 @@
 from Classes.player import Player
-from Classes.item import Item
 from Classes.room import Room
-from Classes.location import table, window, cupboard, door, locations_dict
+from Classes.location import locations_dict
 from Classes.interface import MainMenu
-from text import intro
 import functions as f
 
 while True:
-    #player_name = input("Enter name of your character: ")
+    # player_name = input("Enter name of your character: ")
     player_name = "Filip"
     backpack = []
 
@@ -31,21 +29,10 @@ while True:
             case "/weź":
                 f.take_item(main_room.current_position, locations_dict, backpack)
             case "/użyj":
-                f.use_item()
-            case "/wyrzuć":
+                f.use_item(main_room.current_position, backpack)
+            case "/odłóż":
                 f.throw_item(main_room.current_position, locations_dict, backpack)
             case "/plecak":
                 f.check_backpack(backpack)
             case "/zakończ":
                 exit()
-
-
-
-
-
-
-
-
-
-
-

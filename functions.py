@@ -1,5 +1,4 @@
 # functions.py
-from Classes.room import Room
 from Classes.location import get_location_name
 
 
@@ -39,7 +38,7 @@ def take_item(player_position, locations_dict, player_backapck):
     print("Nie ma takiego przedmiotu")
 
 
-def use_item():
+def use_item(player_position, player_backpack):
     print("You used the item")
     # if item OK and location OK then action1()
 

@@ -12,6 +12,6 @@ Obejrzyj miejsce, przy który stoisz (/sprawdź) | \
 Przejdź w lewo (/lewo) lub prawo (/prawo) | \n\
 Weź przedmiot (/weź) | \
 Użyj przedmiotu z plecaka (/użyj) | \
-Odłóż przedmiot (/wyrzuć) | \
+Odłóż przedmiot (/odłóż) | \
 Zajrzyj do plecaka (/plecak) | \
 Wyjdź z gry (/zakończ) \n"

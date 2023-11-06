@@ -56,4 +56,6 @@ def get_location_name(current_position):
         current_location = "okno"
     elif current_position == 3:
         current_location = "drzwi"
+    else:
+        current_location = ""
     return current_location
