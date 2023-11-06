@@ -13,4 +13,5 @@ Przejdź w lewo (/lewo) lub prawo (/prawo) | \n\
 Weź przedmiot (/weź) | \
 Użyj przedmiotu z plecaka (/użyj) | \
 Odłóż przedmiot (/wyrzuć) | \
+Zajrzyj do plecaka (/plecak) | \
 Wyjdź z gry (/zakończ) \n"

@@ -29,22 +29,37 @@ def take_item(player_position, locations_dict, player_backapck):
     item_name = input("Który przedmiot chcesz wziąć?\n")
     location = get_location_name(player_position)
 
-    if location in locations_dict:
-        list_of_items = locations_dict[location].items
+    list_of_items = locations_dict[location].items
 
-        for item in list_of_items:
-            if item_name == item.name:
-                item.take_item(locations_dict[location].items, item_name, player_backapck)
-                return
+    for item in list_of_items:
+        if item_name == item.name:
+            item.take_item(locations_dict[location].items, item_name, player_backapck)
+            return
 
     print("Nie ma takiego przedmiotu")
 
 
 def use_item():
     print("You used the item")
+    # if item OK and location OK then action1()
 
 
-def throw_item():
-    print("You thrown the item")
+def throw_item(player_position, locations_dict, player_backpack):
+    item_name = input("Który przedmiot chcesz wyrzucić?\n")
+    location = get_location_name(player_position)
+
+    for item in player_backpack:
+        if item_name == item.name:
+            item.throw_item(locations_dict[location].items, item_name, player_backpack)
+            return
+
+    print("Nie ma takiego przedmiotu")
 
 
+def check_backpack(player_backpack):
+    print("Zawartość twojego plecaka:")
+    if player_backpack:
+        for item in player_backpack:
+            print(item.name)
+    else:
+        print("Plecak jest pusty")

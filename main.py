@@ -33,7 +33,9 @@ while True:
             case "/użyj":
                 f.use_item()
             case "/wyrzuć":
-                f.throw_item()
+                f.throw_item(main_room.current_position, locations_dict, backpack)
+            case "/plecak":
+                f.check_backpack(backpack)
             case "/zakończ":
                 exit()
 
