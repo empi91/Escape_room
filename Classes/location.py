@@ -6,35 +6,40 @@ class Location:
 
     def __init__(self, name, item_name, description):
         self.name = name
-        self.items = [Item(name) for name in item_name]
+        self.items = [Item(name, attributes[0], attributes[1]) for name, attributes in item_name.items()]
         self.description = description
 
     def __str__(self):
-        item_names = [item.name for item in self.items]
+        item_names = []
+        for item in self.items:
+            if item.visible:
+                item_names.append(item.name)
+            else:
+                continue
         return f"{self.description} \n {', '.join(item_names)}"
 
 
 table = Location(
     "stół",
-    ["klucz", "kartka", "zeszyt"],
+    {"klucz": [True, True], "kartka": [True, False], "zeszyt": [False, True]},
     f"Przed tobą stoi duży drewniany stół, na którym leżą: "
 )
 
 window = Location(
     "okno",
-    [],
+    {},
     "To jest okno"
 )
 
 door = Location(
     "drzwi",
-    [],
+    {},
     "To są zamknięte drzwi"
 )
 
 cupboard = Location(
     "szafka",
-    [],
+    {},
     "To jest szafka"
 )
 

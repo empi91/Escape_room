@@ -1,8 +1,10 @@
 # item.py
 
 class Item:
-    def __init__(self, name):
+    def __init__(self, name, can_be_taken, visible):
         self.name = name
+        self.can_be_taken = can_be_taken
+        self.visible = visible
 
     def __str__(self):
         return f"{self.name}"

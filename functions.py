@@ -31,6 +31,9 @@ def take_item(player_position, locations_dict, player_backapck):
     list_of_items = locations_dict[location].items
 
     for item in list_of_items:
+        if not item.can_be_taken:
+            print("Nie możesz podnieść tego przedmiotu")
+            return
         if item_name == item.name:
             item.take_item(locations_dict[location].items, item_name, player_backapck)
             return
