@@ -1,6 +1,6 @@
 # location.py
 from Classes.item import Item
-
+from text import door_desc, table_desc, cupboard_desc, window_desc
 
 class Location:
 
@@ -23,28 +23,33 @@ table = Location(
     "stół",
     {
         "klucz": [True, True],
-        "kartka": [True, False],
-        "zeszyt": [False, True]
+        "zeszyt": [True, True],
+        "sejf": [False, True]
     },
-    f"Przed tobą stoi duży drewniany stół, na którym leżą: "
+    table_desc
 )
 
 window = Location(
     "okno",
-    {},
-    "To jest okno"
+    {
+        "kartka z kodem": [True, True]
+    },
+    window_desc
 )
 
 door = Location(
     "drzwi",
     {},
-    "To są zamknięte drzwi"
+    door_desc
 )
 
 cupboard = Location(
     "szafka",
-    {},
-    "To jest szafka"
+    {
+        "stary klucz": [True, False],
+        "skrzyneczka": [False, False]
+    },
+    cupboard_desc
 )
 
 

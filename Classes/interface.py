@@ -12,3 +12,6 @@ class MainMenu:
     def print_options(self):
         decision = input(text.menu)
         return decision
+
+    def print_help(self):
+        print(text.interface_help)
