@@ -23,7 +23,7 @@ table = Location(
     "stół",
     {
         "klucz": [True, True],
-        "zeszyt": [True, True],
+        "kod": [True, False],
         "sejf": [False, True]
     },
     table_desc
@@ -32,7 +32,7 @@ table = Location(
 window = Location(
     "okno",
     {
-        "kartka z kodem": [True, True]
+        "kartka z hasłem": [True, True]
     },
     window_desc
 )

@@ -27,12 +27,18 @@ a jedyne co widzisz to starodawny, mosiężny zamek z dużą dziurką na klucz"
 
 table_desc = "Przed tobą stoi duży drewniany stół, na którym leżą: "
 
-cupboard_desc = "CO prawda nie za duża i niezbyt nowa, ale dalej solidna, drewniana szafka ma jedną szufladę. \n\
+cupboard_desc = "Co prawda nie za duża i niezbyt nowa, ale dalej solidna, drewniana szafka ma jedną szufladę. \n\
 Oczywiście zamkniętą, ale na szczęscie jest również zamek, który wygląda na sprawny."
 
+cupboard_desc_2 = "Co prawda nie za duża i niezbyt nowa, ale dalej solidna, drewniana szafka ma jedną szufladę, \n\
+w której leży skrzyneczka zamknięta na kłódkę z trzycyfrowym kodem"
+
+cupboard_desc_3 = "Co prawda nie za duża i niezbyt nowa, ale dalej solidna, drewniana szafka ma jedną szufladę, \n\
+w której leży: "
+
 window_desc = "Podchodzisz do otwartego, lecz zakratowanego okna. Już na pierwszy rzut oka widzisz,\n\
-że tędy na pewno nie uciekniesz. Ale za to w rogu parapetu dostrzegasz kawałek wystającej kartki. \n\
-Co to może być?"
+że tędy na pewno n ie uciekniesz. Ale za to w rogu parapetu dostrzegasz kawałek wystającej kartki \
+z zapisanym hasłem"
 
 # Text for script scenarios
 
@@ -41,7 +47,10 @@ i Twoim oczom ukazuje się skrzyneczka zamknięta kłódką z miejscem na wpisan
 
 scenario_2_text = ""
 
-scenario_3_text = "Z obawą wkładasz stary klucz do zamka i próbujesz przekręcić. \n\
+scenario_3_text = "Po ustawieniu poprawnego kodu kłódka otweira się z cichym szczękiem. \n\
+Po otwarciu skrzyneczki widzisz w środku duży, bardzo stary klucz."
+
+scenario_4_text = "Z obawą wkładasz stary klucz do zamka i próbujesz przekręcić. \n\
 Zgrzyta, brzęczy, ale w końcu udaję się wykonać pół obortu, potem następne, aż w końcu słyszysz, \n\
 jak zapadki się przesuwają i drzwi stają otworem. \n\
 Jesteś wolny !! \n\n Tylko czy aby na pewno?!?!"
