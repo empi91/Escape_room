@@ -47,8 +47,6 @@ def use_item(player_position, locations_dict, player_backpack):
 
     for item in player_backpack:
         if item_name == item.name:
-            print(location)
-            print(locations_dict[location])
             item.use_item(locations_dict[location], item_name, player_backpack)
             return
 

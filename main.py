@@ -36,3 +36,5 @@ while True:
                 f.check_backpack(backpack)
             case "/zakończ":
                 exit()
+            case _:
+                print("Błędna komenda")

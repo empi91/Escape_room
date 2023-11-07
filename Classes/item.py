@@ -1,4 +1,5 @@
 # item.py
+from scritps import check_use
 
 class Item:
     def __init__(self, name, can_be_taken, visible):
@@ -10,13 +11,12 @@ class Item:
         return f"{self.name}"
 
     def use_item(self, location, used_item, backpack):
-        #if check_use(location, used_item):
-        if False:
+        if check_use(location.name, used_item):
             for item in backpack:
                 if used_item == item.name:
                     backpack.remove(item)
         else:
-            print(f"Nie możesz użyć {used_item} w {location}")
+            print(f"Nie możesz użyć {used_item} w {location.name}")
 
     def take_item(self, list_of_items, taken_item, backpack):
         for item in list_of_items:

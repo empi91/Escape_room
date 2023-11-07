@@ -21,7 +21,11 @@ class Location:
 
 table = Location(
     "stół",
-    {"klucz": [True, True], "kartka": [True, False], "zeszyt": [False, True]},
+    {
+        "klucz": [True, True],
+        "kartka": [True, False],
+        "zeszyt": [False, True]
+    },
     f"Przed tobą stoi duży drewniany stół, na którym leżą: "
 )
 
