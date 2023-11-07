@@ -2,8 +2,8 @@
 from Classes.item import Item
 from text import door_desc, table_desc, cupboard_desc, window_desc
 
-class Location:
 
+class Location:
     def __init__(self, name, item_name, description):
         self.name = name
         self.items = [Item(name, attributes[0], attributes[1]) for name, attributes in item_name.items()]

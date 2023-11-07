@@ -2,6 +2,7 @@
 import text
 import Classes.location
 
+
 def check_use(location, item):
     match location:
         case 'stół':
@@ -37,7 +38,7 @@ def scenario_1():
     # for item in Classes.location.cupboard.items:
     #     if item.name == "skrzyneczka":
     #         item.visible = False
-    text.cupboard_desc = text.cupboard_desc_2
+    Classes.location.cupboard.description = text.cupboard_desc_2
 
 
 def scenario_2():
@@ -52,10 +53,9 @@ def scenario_3():
     for item in Classes.location.cupboard.items:
         if item.name == "stary klucz":
             item.visible = True
-    text.cupboard_desc = text.cupboard_desc_3
+    Classes.location.cupboard.description = text.cupboard_desc_3
 
 
 def scenario_4():
     print(text.scenario_4_text)
     exit()
-

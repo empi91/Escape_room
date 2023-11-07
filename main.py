@@ -6,8 +6,7 @@ from Classes.interface import MainMenu
 import functions as f
 
 while True:
-    # player_name = input("Enter name of your character: ")
-    player_name = "Filip"
+    player_name = input("Enter name of your character: ")
     backpack = []
 
     player = Player(player_name, backpack)

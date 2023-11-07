@@ -1,6 +1,7 @@
 # item.py
 from scritps import check_use
 
+
 class Item:
     def __init__(self, name, can_be_taken, visible):
         self.name = name
@@ -16,7 +17,7 @@ class Item:
                 if used_item == item.name:
                     backpack.remove(item)
         else:
-            print(f"Nie możesz użyć {used_item} w {location.name}")
+            print(f"Nie możesz użyć {used_item} w tym miejscu")
 
     def take_item(self, list_of_items, taken_item, backpack):
         for item in list_of_items:

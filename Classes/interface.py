@@ -4,10 +4,10 @@ import text
 
 class MainMenu:
     def __init__(self):
-        self = self
+        pass
 
     def __str__(self):
-        return f"Class responsible for main menu"
+        return "Class responsible for main menu"
 
     def print_options(self):
         decision = input(text.menu)

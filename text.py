@@ -37,15 +37,16 @@ cupboard_desc_3 = "Co prawda nie za duża i niezbyt nowa, ale dalej solidna, dre
 w której leży: "
 
 window_desc = "Podchodzisz do otwartego, lecz zakratowanego okna. Już na pierwszy rzut oka widzisz,\n\
-że tędy na pewno n ie uciekniesz. Ale za to w rogu parapetu dostrzegasz kawałek wystającej kartki \
-z zapisanym hasłem"
+że tędy na pewno n ie uciekniesz. Ale za to w rogu parapetu dostrzegasz: "
 
 # Text for script scenarios
 
-scenario_1_text = "Wkładasz klucz do zamka szuflady i okazuje się, że nawet pasuje! Przekręcasz go, otwierasz szufladę \n\
-i Twoim oczom ukazuje się skrzyneczka zamknięta kłódką z miejscem na wpisanie trzycyfrowego kodu."
+scenario_1_text = "Wkładasz klucz do zamka szuflady i okazuje się, że nawet pasuje! \n\
+Przekręcasz go, otwierasz szufladę i Twoim oczom ukazuje się skrzyneczka zamknięta \
+kłódką z miejscem na wpisanie trzycyfrowego kodu."
 
-scenario_2_text = ""
+scenario_2_text = "Podchodzisz do sejfu stojącego na stole i powoli wpisujesz hasło z kartki. Pasuje! \n\
+Sejf otweira się ze zgrzytem, a w środku leży kartka z kodem."
 
 scenario_3_text = "Po ustawieniu poprawnego kodu kłódka otweira się z cichym szczękiem. \n\
 Po otwarciu skrzyneczki widzisz w środku duży, bardzo stary klucz."
